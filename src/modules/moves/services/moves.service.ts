@@ -23,7 +23,6 @@ export class MovesService {
           return new Kill(createdMove.id, item);
         });
         await this.killMoves.save(kills);
-        console.log(kills);
       }
       return createdMove;
     } catch (error) {
